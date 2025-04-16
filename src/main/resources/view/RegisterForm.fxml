@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.RegisterFormController">
+    <padding><Insets top="20" bottom="20" left="30" right="30"/></padding>
+
+    <Label text="Register" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
+
+    <Button text="Register" onAction="#handleRegister" maxWidth="200"/>
+    <Label fx:id="statusLabel" textFill="red"/>
+
+    <Hyperlink text="Already have an account? Login" onAction="#goToLogin"/>
+</VBox>
